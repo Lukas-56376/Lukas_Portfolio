@@ -183,8 +183,8 @@
     .plane{ animation: fly 9s linear infinite; }
   }
   @keyframes fly{
-    0%{ transform: translate(-10%, 0); }
-    100%{ transform: translate(120%, -6%); }
+    0%{ transform: translate(-260px, 6px); }
+    100%{ transform: translate(260px, -10px); }
   }
 
   /* ---------- Fußzeile ---------- */
@@ -397,12 +397,14 @@
             <circle cx="320" cy="118" r="2"/>
             <circle cx="360" cy="115" r="2"/>
           </g>
-          <g class="plane" fill="#f2a93b">
-            <ellipse cx="0" cy="55" rx="46" ry="4.5"/>
-            <polygon points="-8,55 -28,32 -18,55 -28,78"/>
-            <polygon points="-34,55 -46,44 -40,55"/>
-            <polygon points="-34,55 -46,66 -40,55"/>
-            <polygon points="36,55 46,45 46,55"/>
+          <g transform="translate(200,55)">
+            <g class="plane" fill="#f2a93b">
+              <path d="M56,0 L40,-3.2 L-46,-3.2 L-56,0 L-46,3.2 L40,3.2 Z"/>
+              <path d="M18,-2.5 L-2,-2.5 L-20,-40 L4,-30 Z"/>
+              <path d="M18,2.5 L-2,2.5 L-20,40 L4,30 Z"/>
+              <path d="M-34,-2.5 L-44,-2.5 L-52,-18 L-38,-13 Z"/>
+              <path d="M-34,2.5 L-44,2.5 L-52,18 L-38,13 Z"/>
+            </g>
           </g>
         </svg>
       </div>
